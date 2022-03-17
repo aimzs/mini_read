@@ -1,0 +1,11 @@
+<!-- 目录 -->
+<view class="c_container">
+
+<view  class="m-cata-content"
+wx:for="{{all_content}}" wx:key="title"
+bindtap="hanldeitemTap"
+data-index="{{index}}"
+>{{item.title}}</view>
+</view>
+
+

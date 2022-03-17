@@ -1,0 +1,86 @@
+<!--pages/user/user.wxml-->
+
+<!-- <button plain="true" 
+bindtap="getUserProfile">
+登录
+</button> -->
+
+<!-- 先照着写 -->
+<view class="user_info_wrap">
+<view class="user_img_wrap" 
+wx:if="{{userinfo.avatarUrl}}">
+<image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+<view class="user_info">
+<image mode="widthFix" class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+<view class="user_name">{{userinfo.nickName}}</view>
+</view>
+</view>
+<view wx:else class="user_button">
+<button plain="true" 
+bindtap="getUserProfile">
+登录
+</button>
+</view>
+</view>
+<view class="user_content">
+<view class="user_main">
+<!--  历史足迹-->
+<view class="wrap">
+<navigator>
+<view class="hisicon iconfont icon-lishi"></view>
+<view class="hisname">阅读历史</view>
+</navigator>
+<navigator>
+<view class="hisicon  iconfont icon-xiaoxi1"></view>
+<view class="hisname">我的消息</view>
+</navigator>
+<navigator>
+<view class="hisicon  iconfont icon-guanzhu"></view>
+<view class="hisname">我的关注</view>
+</navigator>
+<navigator>
+<view class="hisicon  iconfont icon-wodefabiao"></view>
+<view class="hisname">我的发表</view>
+</navigator>
+</view>
+<!-- 中间随便搞搞 站位置 -->
+<view class="middle">
+<view class="m_item1">
+| 可 能 喜 欢 |
+</view>
+<view class="m_item2">
+<image mode="widthFix" src="https://wfqqreader-1252317822.image.myqcloud.com/cover/39/25622039/t6_25622039.jpg"></image>
+<image mode="widthFix" src="https://wfqqreader-1252317822.image.myqcloud.com/cover/196/33692196/t6_33692196.jpg"></image>
+<image mode="widthFix" src="https://wfqqreader-1252317822.image.myqcloud.com/cover/630/25323630/t6_25323630.jpg"></image>
+<image mode="widthFix" src="https://wfqqreader-1252317822.image.myqcloud.com/cover/210/927210/t6_927210.jpg"></image>
+</view>
+</view>
+<!--  下方标签项目-->
+<view class="wrap_item">
+<navigator class="item">
+<text >我的评论</text>
+<text class="icon iconfont icon-Other-6"></text>
+</navigator>
+
+<navigator class="item">
+<text >我的阅读喜好</text>
+<text class="icon iconfont icon-Other-6"></text></navigator>
+<navigator class="item" url="/pages/feedback/feedback">
+<text >意见反馈</text>
+<text class="icon iconfont icon-Other-6"></text>
+</navigator>
+<navigator class="item">
+<text >青少年模式</text>
+<text class="icon iconfont icon-Other-6"></text>
+</navigator>
+<navigator class="item">
+  <text >设置</text>
+<text class="icon iconfont icon-Other-6"></text>
+</navigator>
+</view>
+</view>
+
+
+</view>
+
+

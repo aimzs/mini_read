@@ -1,0 +1,16 @@
+
+<view class="search_row">
+<input placeholder="请输入您要输入的内容" bindinput="handleInput"></input>
+<button bindtap="handleCancel" hidden="{{!isFocus}}" >取消</button>
+</view>
+<view class="search_content">
+  <navigator 
+  wx:key="goods_id"
+  url="/pages/goods_detail/goods_detail?goods_id={{goods.goods_id}}" 
+  class="search_item ">
+  {{goods.goods_name}}
+  </navigator>
+  
+</view > 
+
+<view class="tips">提示：只能进行完整的 书名搜索！</view>

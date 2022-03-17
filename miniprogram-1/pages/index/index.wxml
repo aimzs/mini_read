@@ -1,0 +1,143 @@
+<view class="pyg_index">
+<!-- 搜索框 开始 -->
+<SearchInput></SearchInput>
+<!-- 结束 -->
+<view class="index_swiper">
+<swiper indicator-dots="true" autoplay="ture" indicator-active-color="#db7093" circular="true">
+<swiper-item wx:for="{{swiperList}}" wx:key ="goods_id">
+<navigator><image  src="{{item.image_src}}">
+</image ></navigator>
+</swiper-item>
+</swiper>
+</view>
+<!-- 导航 -->
+<view class="index_cate">
+
+<navigator url="/pages/category/category" open-type="switchTab">
+<image src="../../icons/cata.png" mode="widthFix" ></image>
+<view  class="guide-nav-h">分类</view>
+</navigator>
+<navigator>
+<image src="../../icons/rank.png" mode="widthFix" ></image>
+<view class="guide-nav-h">排行</view>
+</navigator>
+<navigator>
+<image src="../../icons/ownbook.png" mode="widthFix" ></image>
+<view class="guide-nav-h">本书</view>
+</navigator>
+<navigator>
+<image src="../../icons/hotbook.png" mode="widthFix" ></image>
+<view class="guide-nav-h">热门</view>
+</navigator>
+</view>
+<!-- 楼层 -->
+<view class="index_floor">
+<view class="floor_group">
+<!-- 标题 -->
+<view class="floor_title" >
+  <view class="new"> * 新书-出版 / </view>
+<view class="title_content">最新最热 新鲜出炉的新书</view>
+</view>
+<!-- 内容 -->
+<view class="floor_list">
+<navigator wx:for="{{floorList1}}"
+wx:key="book_name">
+  <view class="book_container">
+<image mode="widthFix" src="{{item.image_src}}"></image>
+<view class="content">
+<view class="bookname">{{item.book_name}}</view>
+<view class="author">{{item.author}}</view>
+</view>
+</view>
+
+</navigator>
+
+
+</view>
+
+
+</view>
+<view class="floor_group">
+<!-- 标题 -->
+<view class="floor_title" >
+  <view class="new"> * 最热 最火 / </view>
+<view class="title_content">读者老爷们 最喜爱的书籍</view>
+</view>
+<!-- 内容 -->
+<view class="floor_list">
+<navigator wx:for="{{floorList2}}"
+wx:key="book_name">
+  <view class="book_container">
+<image mode="widthFix" src="{{item.image_src}}"></image>
+<view class="content">
+<view class="bookname">{{item.book_name}}</view>
+<view class="author">{{item.author}}</view>
+</view>
+</view>
+
+</navigator>
+
+
+</view>
+
+
+</view>
+<view class="floor_group">
+<!-- 标题 -->
+<view class="floor_title" >
+  <view class="new"> * 飙升 重磅 / </view>
+<view class="title_content">最近一周热度上涨最快的出版书</view>
+</view>
+<!-- 内容 -->
+<view class="floor_list">
+<navigator wx:for="{{floorList3}}"
+wx:key="book_name">
+  <view class="book_container">
+<image mode="widthFix" src="{{item.image_src}}"></image>
+<view class="content">
+<view class="bookname">{{item.book_name}}</view>
+<view class="author">{{item.author}}</view>
+</view>
+</view>
+
+</navigator>
+
+
+</view>
+
+
+</view>
+<view class="floor_group">
+<!-- 标题 -->
+<view class="floor_title" >
+  <view class="new"> * 男生 最爱 / </view>
+<view class="title_content">最近更新的热门男生小说</view>
+</view>
+<!-- 内容 -->
+<view class="floor_list">
+<navigator wx:for="{{floorList4}}"
+wx:key="book_name">
+  <view class="book_container">
+<image mode="widthFix" src="{{item.image_src}}"></image>
+<view class="content">
+<view class="bookname">{{item.book_name}}</view>
+<view class="author">{{item.author}}</view>
+</view>
+</view>
+
+</navigator>
+
+
+</view>
+
+
+</view>
+
+
+
+
+
+
+</view>
+
+</view>

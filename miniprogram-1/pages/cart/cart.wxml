@@ -1,0 +1,30 @@
+<view class='container'>
+  <view  class="scrollContainer" scroll-y="true">
+    <view  style="margin:20rpx;" wx:for="{{list}}" wx:key="goods_id" >
+                <navigator class='row' url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+                  <view class='rowBackgroundBox' >
+                    <image class="addIcon1" src="{{item.goods_small_logo}}" ></image>
+                  </view>
+                    <view class='rowDesc'>
+                      <text>{{item.goods_name}}</text>
+                      <text>{{item.book_author}}</text>
+                    </view>
+                </navigator>
+                    <view class="line"></view>
+              </view>
+        
+        <view  style="margin:20rpx;" >
+                <navigator class='row' url="/pages/index/index" open-type="switchTab">
+                  <view class='rowBackgroundBox' >
+                    <image class="addIcon" src="../../icons/add.png" ></image>
+                  </view>
+                    <view class='rowDesc'>
+                      <text>添加新书</text>
+                      <text>欢迎前往发现区,一切应有可能！</text>
+                    </view>
+                </navigator>
+                    <view class="line"></view>
+              </view>
+        
+  </view>
+</view>

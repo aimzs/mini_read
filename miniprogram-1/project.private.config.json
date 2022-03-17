@@ -1,0 +1,66 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类页面",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "l商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cat_id=11",
+          "scene": null
+        },
+        {
+          "name": "goods_detail",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "goods_id=906",
+          "scene": null
+        },
+        {
+          "name": "reader",
+          "pathName": "pages/reader/read",
+          "query": "goods_id=703",
+          "scene": null
+        },
+        {
+          "name": "个人",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索中心",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "反馈",
+          "pathName": "pages/feedback/feedback",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "书库",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

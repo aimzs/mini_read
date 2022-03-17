@@ -1,0 +1,106 @@
+.pyg_index{
+  background-color: #f6f7f9;
+}
+.index_swiper{
+  margin-top: 10rpx;
+}
+.index_swiper swiper{
+  width: 100%;
+  height: 340rpx;
+  
+}
+.index_swiper swiper image{
+    width: 100%; 
+    height:320rpx;
+}
+.index_cate{
+  display: flex;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: 10rpx;
+  
+  
+}
+.index_cate navigator{
+  flex: 1;
+  display: grid;
+  justify-items: center;
+
+} 
+.index_cate navigator image{
+  width: 60%;
+  
+  
+}
+.index_cate navigator .guide-nav-h{ 
+  font-weight:bold;
+  font-size: medium;
+ 
+}
+/* 最下排 floor 样式 */
+.floor_group{
+  width: 100%;
+  height: 700rpx;
+}
+.floor_group .floor_title{
+  margin-top: 5vh;
+  border-radius: 0;
+  border-bottom: 100% solid rgba(238, 52, 52, 0.3);
+  border-width: 0 0 1px;
+  height: 120rpx;
+ 
+  
+  
+
+}
+.title_content{
+  color: rgb(209, 87, 0);
+  padding-left: 10rpx;
+}
+.floor_title .new{
+  font-weight:600;
+  color: #310f02;
+  font-size: 40rpx;
+  font-family: 'Microsoft YaHei', Courier, monospace;
+  margin-bottom: 5rpx;
+  padding-left: 10rpx;
+  border-left: 5rpx solid rgb(240, 99, 81);
+}
+
+.floor_list navigator{
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+}
+.book_container{
+  display: flex;
+  
+}
+
+.book_container image{
+  flex:3.5;
+  width: 100%;
+}
+.book_container .content{
+  flex: 6.5;
+ width: 70%;
+ display: grid;
+ padding-left: 20rpx;
+ border-right: 6rpx solid rgb(206, 103, 19,0.6);
+}
+.content .bookname{
+  padding-top: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.content .author{
+  color:#969ba3;
+}
+
+
+ .floor_list navigator{
+  float: left;
+  width: 48%;
+}
+
+
+  

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/category/category",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/cart/cart",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/auth/auth",
+    
+    "pages/logs/logs",
+    "pages/reader/read"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "无敌阅读",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "icons/category.png",
+        "selectedIconPath": "icons/category-o.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "书架",
+        "iconPath": "icons/bookshelf.png",
+        "selectedIconPath": "icons/_bookshelf.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my-o.png"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

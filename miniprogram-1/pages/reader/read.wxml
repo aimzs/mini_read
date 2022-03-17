@@ -1,0 +1,76 @@
+
+<view class="container" style="background:{{bodyColor}};">
+  <view class="artical-action-mid" bindtap="midaction"  ></view>
+  <!-- 主体内容 -->
+  <view  scroll-top="{{scroll_top}}" scroll-y="true" class="m-content" style=" font-size:{{fontSize}}px; background:{{bodyColor}}; "  bindscroll="scrollContain" bindscrolltolower="bindscrolltolower"
+   >
+   <view class="title">{{title}}</view>
+    <view class="m-read">
+    <text>{{Text}}</text>
+    </view>
+
+    
+  </view >
+</view>
+ 
+
+
+ 
+  
+
+<!-- 目录 -->
+<scroll-view  class="m-cata" style="display:{{cata}}" scroll-y="true" scroll-top="0">
+<!-- <view class="cata_item"
+wx:for="{{all_content.meassage}}"
+wx:key="title"
+>{{item.title}}</view> -->
+<menu all_content="{{all_content.meassage}}" binditemChange="handleitemChange"></menu>
+</scroll-view>
+
+<!-- 字体调节 -->
+  <view class="top-nav-pannel font-container" style="display:{{ziti}}">
+    <view class="child-mod">
+     <view class="span">字号</view>
+     <text class="spe-button" bindtap="bindBig">大</text>
+     <text class="spe-button" style="margin-left:10px;" bindtap="bindSmall">小</text>
+    </view>
+    <view class="child-mod">
+      <view class="span">背景</view>
+      <block wx:for="{{colorArr}}" wx:for-item="color" wx:key="this">
+        <view class="bk-container {{_num==index?'bk-container-current':''}}" data-num="{{index}}" style="background-color:{{color.value}}" bindtap="bgChange"></view>
+      </block>
+    </view>
+  </view>
+  <!-- 上一页下一页 -->
+  <view class="m-button-bar" style="display:{{zj}}">
+    <view class="u-tab">
+      <view class="uli" bindtap="lastPage">上一章</view>
+      <view class="uli" style="border-right:none" bindtap="nextPage">下一章</view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="bottom-nav bottom_nav" style="display:{{nav}}">
+    <view class="item menu-button"
+    bindtap="cataaction">
+      <view class="item-warp">
+        <view class="icon-menu"></view>
+        <view class="icon-text">目录</view>
+      </view>
+    </view>
+    <view class="item current" bindtap="zitiaction">
+      <view class="item-warp">
+        <view class="icon-ft"></view>
+        <view class="icon-text">字体</view>
+      </view>
+    </view>
+    <view class="item" bindtap="dayNight">
+      <view class="item-warp" wx:if="{{daynight}}">
+        <view class="icon-day"></view>
+        <view class="icon-text">白天</view>
+      </view>
+      <view class="item-warp" wx:else>
+        <view class="icon-night"></view>
+        <view class="icon-text">夜间</view>
+      </view>
+    </view>
+  </view>

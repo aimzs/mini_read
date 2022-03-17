@@ -1,0 +1,288 @@
+pages {
+  /* 防止最底部被挡住 */
+  padding-bottom: 100rpx;
+  font-family: PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;
+  
+}
+view{
+  display: block;
+}
+.icon{
+  float: right;
+}
+.detail_container {
+  margin-bottom: 130rpx;
+  height: auto;
+  background-color: #cccccc;
+}
+
+/* 上方 内容 */
+.readerbook_head {
+  display: flex;
+  padding-top: 60rpx;
+  background-color: #17181aad;
+}
+
+.bookcover {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30rpx;
+}
+
+.bookcover image {
+  width: 70%;
+}
+
+.bookinfo_right {
+  flex: 4;
+}
+
+.bookInfo_right_header {
+  font-size: 55rpx;
+  margin-bottom: 20rpx;
+  color: #fff;
+
+}
+
+.bookInfo_author_container {
+  color: #cccccc;
+}
+
+.bookInfo_introhasMore {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+ font-size: 32rpx;
+
+}
+
+.on {
+  display: block;
+  text-overflow: clip;
+  overflow: visible;
+
+}
+
+.detail_content {
+  width: 100%;
+  background-color: #fff;
+  margin: 25rpx auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ellipsis_text {
+  margin-top: 5rpx;
+  width: 100%;
+  font: 16px;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+.d_item {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 45rpx;
+  margin-bottom: 25rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom:2rpx solid #f14c0b94 ;
+}
+.book_rate{
+  background-color: #fff;
+  margin-top: 10rpx;
+  height: 240rpx;
+}
+.rate_detail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    align-items: center
+}
+.rate_detail .de_left{
+  display: flex;
+  padding-left: 20rpx;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1rpx solid #cccccc;
+}
+.dl_content{
+  font-size: 38rpx;
+  margin-bottom: 10rpx;
+}
+.icon2{
+  font-size: 20rpx;
+}
+.dl_content2{
+  font-size: 25rpx;
+  color: rgb(32, 29, 29);
+}
+.rate_detail .de_right{
+  flex: 5;
+  margin: 6rpx 0 0 40rpx;
+}
+.book_rating_item_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: PingFangSC-Medium,PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;
+    color: #8a8c90;
+    line-height: 16px;
+}
+.book_rating_item_bar_background{
+  flex: 1;
+  background-color: rgba(233, 146, 31, 0.323);
+  border-radius: 3px;
+  margin-left: 8px;
+  height: 5px;
+  overflow: hidden;
+}
+.book_rating_item_bar_content{
+  height: 100%;
+    background-color: rgba(233, 146, 31, 1);
+    border-radius: 3px
+}
+.book_rating_item_bar .book_rating_item_bar_margin{
+  margin: 8rpx 0;
+}
+.rate_header{
+  padding: 15rpx 20rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.rate_header .c_left{
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.rate_header .c_right{
+  font-size: 30rpx;
+}
+.comment{
+  margin-top: 20rpx;
+  padding-left:25rpx ;
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  
+  
+}
+.comment_header{
+  overflow: hidden;
+  margin-bottom: 21rpx;
+  padding-top: 20rpx;
+}
+.comment_title{
+  font-size: 20px;
+    font-family: "SourceHanSerifCN-Bold",PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;
+    color: #141516;
+}
+.comment_content{
+  display: block;
+}
+.comment_content_item{
+  margin-bottom: 32px;
+}
+.comment_content_item .title{
+  display: flex;
+  align-items: center;
+}
+.wr_avatar{
+  width: 18px!important;
+  height: 18px!important;
+  display: inline-block!important;
+  vertical-align: middle!important;
+  margin-top: -2px;
+  margin-right: 6px
+}
+.name{
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  color: #8a8c90;
+}
+.wr_avatar_img{
+
+   width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.wr_ratingLevelBar_text{
+  margin: 0 0 1px 3px;
+  display: flex;
+  align-items: center;
+}
+
+.content_hasmore{
+  padding-top: 20rpx;
+  height: auto;
+}
+/* 下方按钮栏 */
+.btm_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+}
+
+.tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  position: relative;
+}
+
+.tool_item button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.btn_cart {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.btn_buy {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.iscollect {
+  background-color: rgba(255, 255, 255, 0.541);
+  color: #cccccc;
+}

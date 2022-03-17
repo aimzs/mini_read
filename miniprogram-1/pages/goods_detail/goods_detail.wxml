@@ -1,0 +1,150 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+
+<!-- 上方内容 -->
+<view class="detail_container">
+<view class="readerbook_head">
+<view class="bookcover"
+>
+<image mode="widthFix" src="{{goodobj.goods_small_logo}}"></image>
+</view>
+<view class="bookinfo_right">
+<view class="bookInfo_right_header">{{goodobj.goods_name}}</view>
+<view class="bookInfo_author_container">{{goodobj.book_author}}</view>
+</view>
+</view>
+<view class="book_rate">
+<view class="rate_header">
+<text class="c_left">阅读推荐值：</text>
+<text class="c_right">88.88%</text>
+<text class="icon iconfont icon-Other-6"></text>
+</view>
+<view class="rate_detail">
+<view class="de_left">
+<view class="dl_content"> 值得一读</view>
+<view class="dl_content2">
+<text>4222人点评</text>
+  <text class="icon2 iconfont icon-Other-6"></text>
+</view>
+
+</view>
+
+<view class="de_right">
+<view class="book_rating_item_bar">
+<text>好看</text>
+<view class="book_rating_item_bar_background">
+<view class="book_rating_item_bar_content" style="width: 74%;"></view>
+</view>
+</view>
+<view class="book_rating_item_bar book_rating_item_bar_margin">
+<text>一般</text>
+<view class="book_rating_item_bar_background">
+<view class="book_rating_item_bar_content" style="width: 15%;"></view>
+</view>
+</view>
+<view class="book_rating_item_bar">
+<text>不行</text>
+<view class="book_rating_item_bar_background">
+<view class="book_rating_item_bar_content" style="width: 5%;"></view>
+</view>
+</view>
+
+
+</view>
+</view>
+</view>
+<view class="detail_content">
+<view class="d_item">详情</view>
+<view class="bookInfo_introhasMore {{isShow?'on' : ''}}">
+{{goodobj.goods_introduce}}
+</view>
+<view class='ellipsis_text' bindtap='toggle'>{{isShow?"收起":"展开"}}</view>
+</view>
+
+<view class="comment">
+<view class="comment_header">
+  <text class="comment_title">精彩点评</text>
+</view>
+<view class="comment_content">
+<view class="comment_content_item">
+<view class="title">
+<view class="wr_avatar">
+<image class="wr_avatar_img" src="https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKGQicbjFgZ5IffsOfrXEA5icWTlLWVKhHT8Op2sp9d4ysokfg8ArQFYRzn7AUvvy8nurlgAxhMtU4A/46"></image>
+</view>
+<text class="name">翠花</text>
+<view class="wr_ratingLevelBar_text">
+<view class="wr_ratingLevelBar_icon">☺</view>
+<view class="wr_ratingLevelBar_text">认为好看</view>
+</view>
+</view>
+<view class="content_hasmore">
+  这是一本非常让人醍醐灌顶的书，但是很遗憾我刚上大一的时候没能看，这本书是2016年出版的，那时我大三，似乎还没有开始读书之旅，也不知道有这本书。当2019年的我已经经历完大学和人生迷茫寻找自我的阶段之后，读这本书觉得十分有共鸣，像是一位长者在和我谈心，又像是我自己的想法意识直接变成了文字，这种奇妙的共鸣让人欲罢不能。
+  如果我早点读这本书，也许我不会浪费时间在大学里无聊的社团，智障的活动上，实际上那些团体没让我收获任何一位亲近的知己朋友。
+  </view>
+</view>
+<view class="comment_content_item">
+<view class="title">
+<view class="wr_avatar">
+<image class="wr_avatar_img" src="https://res.weread.qq.com/wravatar/WV0009-0fOCwj_z8KqVvr7gqYT6ma2/96"></image>
+</view>
+<text class="name">燃烧</text>
+<view class="wr_ratingLevelBar_text">
+<view class="wr_ratingLevelBar_icon">☺</view>
+<view class="wr_ratingLevelBar_text">认为好看</view>
+</view>
+</view>
+<view class="content_hasmore">
+  一路上走过路过但不一定都有留下的记忆，坚持着去努力去寻知才能看清自身的不足之处；学什么都需要静下来慢下来才能体会到一些，整理一下慢慢养成习惯就会伴随一些更丰富的生活。
+  </view>
+</view>
+<view class="comment_content_item">
+<view class="title">
+<view class="wr_avatar">
+<image class="wr_avatar_img" src="https://res.weread.qq.com/wravatar/WV0001-szlQDNbAQwHU5vep639t7a6/96"></image>
+</view>
+<text class="name">南薰Fanny🏅</text>
+<view class="wr_ratingLevelBar_text">
+<view class="wr_ratingLevelBar_icon">☺</view>
+<view class="wr_ratingLevelBar_text">认为一般</view>
+</view>
+</view>
+<view class="content_hasmore">
+  教育就是当你忘记了所学的一切之后所存活下来的那一部分。我们在大学的大部分所得必然会慢慢淡忘，剩余的部分其实就是你自己。
+这本书可以让我们深入思考高等教育的目的，虽然作者的观点有所偏颇，但作为家长依然有所得，
+  </view>
+</view>
+</view>
+</view>
+
+
+</view>
+
+
+
+
+<!-- 底部工具栏 -->
+<view class="btm_tool">
+<view class="tool_item">
+<view class="iconfont icon-kefu"></view>
+<view>咨询</view>
+<button open-type="contact"></button>
+</view>
+<view class="tool_item">
+<view class="iconfont icon-yixianshi-"></view>
+<view>分享</view>
+<button open-type="share"></button>
+</view>
+<navigator class="tool_item"  url="/pages/cart/cart" open-type="switchTab">
+<view class="iconfont icon-ding_dan"></view>
+<view>书架</view>
+</navigator>
+<view 
+bindtap="handleCartAdd" 
+class="tool_item btn_cart"
+>
+<block wx:if="{{!isCollect}}" >加入书架</block>
+<block wx:else >已在书架</block>
+</view>
+<navigator url="/pages/reader/read?goods_id=703" class="tool_item btn_buy">
+立即阅读
+</navigator >
+</view>
